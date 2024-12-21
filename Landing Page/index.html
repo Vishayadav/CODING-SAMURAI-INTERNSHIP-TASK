@@ -1,12 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lavishly+Yours&family=Marck+Script&family=MonteCarlo&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        #home {
+            background-color: black;
+            height: 100vh;
+            width: 100%;
+            position: static;
+        }
+
+        header {
+            height: 70px;
+            width: 100%;
+            display: flex;
+            border-bottom: 2px solid white;
+            align-items: center;
+            border-end-start-radius: 50px;
+            border-end-end-radius: 50px;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: 700;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            padding-left: 30px;
+            transition: 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.2);
+            color: gray;
+        }
+
+
+
+        .navigation a {
+            text-decoration: none;
+            color: azure;
+            align-self: center;
+            margin-right: 50px;
+            border-bottom: 2px solid black;
+            font-size: 1.2rem;
+            transition: 0.3s ease;
+            font-weight: 700;
+        }
+
+        .navigation a:hover {
+            transform: scale(1.2);
+            color: gray;
+            border-bottom: 2px solid white;
+        }
+
+        .ti {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .text {
+            color: white;
+            margin-left: 120px;
+            margin-top: 40px;
+            font-size: 7rem;
+            font-family: 'Lavishly Yours', 'Times New Roman', Times, serif;
+            font-weight: 500;
+            transition: 0.3s ease;
+            border-bottom: 2px solid gray;
+            transition: 0.5s ease
+        }
+        .text:hover{
+            color: aliceblue;
+            transform: translateX(150px);
+        }
+
+        img {
+            border-top-left-radius: 250px;
+            border-top-right-radius: 250px;
+            box-shadow: 0px 0px 15px 2px grey;
+            border: 4px solid black;
+            outline: 1.5px solid white;
+            margin-top: 100px;
+            margin-right: 100px;
+            transition:0.3s ease ;
+        }
+        img:hover{
+transform: scale(1.15);
+box-shadow: 3px 3px 3px 3px white;
+        }
+        .background{
+            height: 100vh;
+            display: flex;
+            justify-content:space-between;
+            align-items:flex-start;
+            position: relative;
+            width: 100%;
+        }
+        .background::before{
+           content:'';
+            background-image: url(cdnj9.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            opacity: 0.35;
+        }
+        
+        .photography{
+            height: 70px;
+            width: 100%;
+            font-size: 3rem;
+            align-items: center;
+            justify-content: center;
+            top: 0;
+            left: 0;
+            margin: 20px;
+        }
+        .photography.pt{
+top: 0;
+left: 0;
+        }
+    </style>
 </head>
+
 <body>
-    
+
+    <div id="home">
+        <header>
+            <h3 class="logo">Scylla</h3>
+            <nav class="navigation">
+                <a href="#">Home</a>
+                <a href="#">Login</a>
+                <a href="#">Contacts</a>
+                <a href="#">About</a>
+            </nav>
+        </header>
+        <div class="ti">
+            <div class="text">Scylla <br> Couture <hr> </div>
+
+
+
+            <img src="cdnj7.jpeg" title="Hello There!" alt="Home picture goes here" width="450px" height="450px">
+        </div>
+    </div>
+    <div class="background">
+<div class="photography">
+    <h3 class="pt">Photo <hr> Graphy</h3>
+</div>
+    </div>
+    <script>
+
+    </script>
 </body>
+
 </html>
