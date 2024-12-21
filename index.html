@@ -316,8 +316,21 @@
         </div>
     </section>
 
+
+
     <script>
 
+        window.addEventListener('scroll', function () {
+            var scrollPosition = window.scrollY;
+            var homeSection = document.querySelector('#home');
+            var body = document.body;
+
+            if (scrollPosition >= homeSection.offsetHeight) {
+                body.classList.remove('home-active');
+            } else {
+                body.classList.add('home-active');
+            }
+        });
     </script>
 </body>
 
