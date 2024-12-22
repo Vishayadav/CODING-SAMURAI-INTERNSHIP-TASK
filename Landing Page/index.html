@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lavishly+Yours&family=Marck+Script&family=MonteCarlo&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Caveat:wght@400..700&family=Diplomata+SC&family=Lavishly+Yours&family=Love+Light&family=Marck+Script&family=MonteCarlo&display=swap"
         rel="stylesheet">
     <style>
         * {
@@ -92,7 +92,7 @@
             transform: translateX(150px);
         }
 
-        img {
+        .img1 {
             border-top-left-radius: 250px;
             border-top-right-radius: 250px;
             box-shadow: 0px 0px 15px 2px grey;
@@ -103,9 +103,9 @@
             transition: 0.3s ease;
         }
 
-        img:hover {
+        .img1:hover {
             transform: scale(1.15);
-            box-shadow: 3px 3px 3px 3px white;
+            box-shadow: 0px 0px 15px 2px white;
         }
 
         .background {
@@ -115,6 +115,8 @@
             align-items: flex-start;
             position: relative;
             width: 100%;
+            top: 0;
+            left: 0;
         }
 
         .background::before {
@@ -145,6 +147,56 @@
             top: 0;
             left: 0;
         }
+
+
+        .image2 {
+            position: absolute;
+            top: 170px;
+            left: 80px;
+            border: 2px white solid;
+            outline: 3px solid black;
+        }
+
+        .background2 {
+            height: 100vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            position: relative;
+            width: 100%;
+
+        }
+
+
+        .background2 img {
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+        }
+
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        h1 {
+            position: relative;
+            z-index: 2;
+            color: white;
+            font-family: 'Beau Rivage', 'MonteCarlo', 'Diplomata SC', 'Love Light', 'Times New Roman', Times, serif;
+            font-size: 6rem;
+            margin-top: 60px;
+            margin-left: 500px;
+            text-align: center;
+            margin-right: 500px;
+            border-bottom: 2px solid white;
+        }
     </style>
 </head>
 
@@ -167,7 +219,8 @@
 
 
 
-            <img src="cdnj7.jpeg" title="Hello There!" alt="Home picture goes here" width="450px" height="450px">
+            <img class="img1" src="cdnj7.jpeg" title="Hello There!" alt="Home picture goes here" width="450px"
+                height="450px">
         </div>
     </div>
     <div class="background">
@@ -175,8 +228,38 @@
             <h3 class="pt">Photo
                 <hr> Graphy
             </h3>
+            <div class="by">
+
+                <img class="image2" src="cdnj10.jpeg" width="400px" height="500px" />
+                <h2 style="font-size: 5rem; margin-left: 800px; margin-top: 50px;">Lorem
+                    <hr>
+                </h2>
+                <p style="font-size: 1.5rem; margin-left: 800px; margin-top: 30px; justify-self: center;"> Ipsum dolor
+                    sit, amet consectetur adipisicing elit. Officiis facilis voluptas culpa. Asperiores odit, inventore
+                    exercitationem quibusdam aliquid tempora in quod sed labore sint culpa corrupti voluptate ducimus
+                    doloremque et Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, vel aperiam ratione
+                    dicta corporis ab? Ipsam quis molestias nulla eveniet!</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="background2">
+        <img src="cdnj11.jpeg" alt="3rd page goes here" width="100%" height="100vh">
+        <div class="overlay">
+            <h1>About &nbsp Us </h1>
+            <h4
+                style="color: aliceblue; font-family:  'Times New Roman', Times, serif; font-size: 2rem;text-align: justify; justify-self: center;margin-left: 300px; margin-right: 300px; margin-top: 50px; font-weight: 400;">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores vel sit tempora ipsa minima numquam
+                quo aut. Veritatis praesentium enim voluptates aspernatur quia minus, est dolores fugit tempora repellat
+                commodi tenetur minima magni obcaecati ab inventore iste odio officia maxime Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit. Delectus quos quo autem. Inventore natus reprehenderit fuga commodi quod
+                est id accusamus optio molestias perspiciatis sint, iure fugit, aliquid magnam asperiores Lorem ipsum
+                dolor sit amet eksa jd
+                !
+            </h4>
         </div>
     </div>
+
     <script>
 
     </script>
